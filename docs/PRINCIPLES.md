@@ -1,5 +1,7 @@
 # Principles
 
+[English](PRINCIPLES.md) | [Русский](ru/PRINCIPLES.md)
+
 These principles refine the [Manifesto](MANIFESTO.md). Each states a meaning, rationale, practical implications, and a common failure mode.
 
 ## 1. Engineering Before Generation

@@ -1,5 +1,7 @@
 # Engineering Lifecycle
 
+[English](ENGINEERING-LIFECYCLE.md) | [Русский](ru/ENGINEERING-LIFECYCLE.md)
+
 The compact lifecycle is **Think → Specify → Review → Plan → Generate → Verify → Capture Knowledge → Improve**. The extended lifecycle below makes responsibilities and gates explicit. Stages may iterate rather than proceed once in a straight line.
 
 The full conceptual sequence is:

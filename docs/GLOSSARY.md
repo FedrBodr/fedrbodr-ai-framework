@@ -1,5 +1,7 @@
 # Glossary
 
+[English](GLOSSARY.md) | [Русский](ru/GLOSSARY.md)
+
 **AI provider** — A hosted service or local runtime supplying model inference and related capabilities. It is replaceable and is not an authoritative project store.
 
 **AI agent** — A bounded software actor that combines a model, supplied context, and tools to pursue a task. Its output remains untrusted until the workflow's validation passes.

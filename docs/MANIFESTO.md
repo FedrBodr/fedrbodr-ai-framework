@@ -1,5 +1,7 @@
 # Manifesto
 
+[English](MANIFESTO.md) | [Русский](ru/MANIFESTO.md)
+
 FedrBodr AI Framework starts from a change in economics: AI can produce implementation quickly, but it does not make engineering consequences cheap.
 
 ## Durable foundations

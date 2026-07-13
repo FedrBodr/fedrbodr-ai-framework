@@ -1,5 +1,7 @@
 # Governance
 
+[English](GOVERNANCE.md) | [Русский](ru/GOVERNANCE.md)
+
 Governance defines authority, risk classification, and required gates. It applies whether work is performed manually, with one AI assistant, or through multiple agents.
 
 ## Responsibility boundaries

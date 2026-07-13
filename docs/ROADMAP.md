@@ -1,5 +1,7 @@
 # Roadmap
 
+[English](ROADMAP.md) | [Русский](ru/ROADMAP.md)
+
 This roadmap expresses direction without delivery dates. Movement between committed scope, exploration, and long-term ideas requires evidence and review.
 
 ## Phase 0 — Foundation

@@ -25,6 +25,14 @@ These rules govern AI agents changing FedrBodr AI Framework itself.
 - Do not add empty abstractions, speculative tooling, or duplicated concepts.
 - Do not imply that planned tooling or optional integrations are implemented, tested, official, or mandatory.
 
+## Localization
+
+- English files are canonical. Russian translations live in `README.ru.md` and `docs/ru/`.
+- Follow `docs/LOCALIZATION.md`; do not create a second authoritative specification in a translation.
+- Update an existing translation when its English source changes materially, or mark the translation status explicitly.
+- Keep code, paths, commands, product names, normative keywords, and external project names unchanged where translation would reduce precision.
+- Validate links and Mermaid diagrams in both languages.
+
 ## Boundaries and safety
 
 - Never add secrets, credentials, sensitive personal data, biographies, resumes, or personal records.

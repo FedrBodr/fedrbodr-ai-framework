@@ -1,5 +1,7 @@
 # FedrBodr AI Framework
 
+[English](README.md) | [Русский](README.ru.md)
+
 Build AI-first engineering workflows that outlive any single LLM provider.
 
 > **Status:** Early-stage, experimental, and a work in progress. Version 0.1 is a documentation-first engineering methodology, evolving specification, and set of project templates—not a finished software platform.
@@ -89,6 +91,7 @@ See [Principles](docs/PRINCIPLES.md) and [Governance](docs/GOVERNANCE.md).
 ```text
 docs/                         Methodology, architecture, lifecycle, and decisions
 docs/integrations/            Optional, independently owned integration targets
+docs/ru/                      Russian translations of core methodology documents
 templates/project/            Provider-neutral adoption template
 AGENTS.md                     Rules for agents changing this framework
 ```

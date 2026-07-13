@@ -1,5 +1,7 @@
 # Conceptual Reference Architecture
 
+[English](ARCHITECTURE.md) | [Русский](ru/ARCHITECTURE.md)
+
 ## Status
 
 This document defines conceptual responsibilities and dependency rules for the evolving methodology. It does not describe implemented framework software.

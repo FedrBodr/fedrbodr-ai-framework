@@ -1,5 +1,7 @@
 # Vision
 
+[English](VISION.md) | [Русский](ru/VISION.md)
+
 ## Central question
 
 > How do we build an engineering process in which AI becomes a reliable member of the engineering team?

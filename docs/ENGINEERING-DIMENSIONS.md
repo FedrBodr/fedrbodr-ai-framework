@@ -1,5 +1,7 @@
 # Engineering Dimensions
 
+[English](ENGINEERING-DIMENSIONS.md) | [Русский](ru/ENGINEERING-DIMENSIONS.md)
+
 Engineering dimensions are cross-cutting lenses applied during discovery, specification, architecture, implementation, and verification. Not every task needs equal depth. The [risk classification](GOVERNANCE.md#risk-classification) determines how much analysis and evidence is proportionate.
 
 ## Dimension guide
