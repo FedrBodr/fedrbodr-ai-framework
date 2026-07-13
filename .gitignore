@@ -1,0 +1,26 @@
+# macOS
+.DS_Store
+
+# IntelliJ IDEA — local workspace state
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/shelf/
+*.iml
+
+# Visual Studio Code — local workspace state; shared settings may be committed
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/settings.json
+!.vscode/tasks.json
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*~
