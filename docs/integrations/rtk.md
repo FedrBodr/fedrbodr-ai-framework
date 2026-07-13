@@ -6,7 +6,7 @@ Candidate optional Context Efficiency integration. It is neither installed nor r
 
 ## What RTK is
 
-[RTK](https://github.com/rtk-ai/rtk) is an independently maintained CLI proxy designed to filter and compact command output before it enters an AI agent's context. Its upstream documentation describes filters for Git, file listing and reading, search, tests, linters, builds, containers, infrastructure tools, and logs.
+[RTK](https://github.com/rtk-ai/rtk) is an independent project maintained under the `rtk-ai` GitHub organization. It is a CLI proxy designed to filter and compact command output before it enters an AI agent's context. Its upstream documentation describes filters for Git, file listing and reading, search, tests, linters, builds, containers, infrastructure tools, and logs.
 
 RTK is not part of the framework core. Its implementation is not copied or vendored here. Reported token savings are upstream measurements, not guarantees by this project; results vary with the repository, command, output, integration mechanism, tool behavior, and workflow.
 
