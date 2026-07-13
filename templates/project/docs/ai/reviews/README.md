@@ -26,4 +26,4 @@ Confirm and record:
 - documentation and durable project knowledge updated;
 - rollout or rollback evidence reviewed where applicable;
 - unresolved failures and risks listed with owners;
-- the final conclusion and accountable human approval required by risk.
+- the final conclusion and decision owner approval required by risk.

@@ -28,7 +28,7 @@ Examples include editorial changes, narrowly scoped internal refactoring with st
 
 ### Medium Risk
 
-Examples include user-visible behavior, new integrations, meaningful data-flow changes, or work with moderate operational impact. Require an explicit specification, acceptance criteria, engineering-dimensions review, human approval, an implementation plan, and documented verification.
+Examples include user-visible behavior, new integrations, meaningful data-flow changes, or moderate operational impact. Require a specification, acceptance criteria, dimensions review, decision owner approval, implementation plan, and documented verification.
 
 ### High Risk
 
@@ -38,7 +38,7 @@ Examples include authentication or authorization, sensitive or regulated data, i
 
 1. **Specification gate:** Is the problem, scope, design, assumptions, relevant dimensions, acceptance criteria, and test strategy sufficient for the risk?
 2. **Engineering review gate:** Have security, expected load, reliability, cost, and other applicable dimensions influenced the design?
-3. **Human approval gate:** Has an accountable person approved the remaining uncertainty and implementation direction?
+3. **Decision owner approval gate:** Has the decision owner approved the remaining uncertainty and implementation direction?
 4. **Verification gate:** Does fresh evidence demonstrate acceptance criteria and expose unresolved failures or risks?
 5. **Release gate:** Is rollout appropriate for the risk, with rollback and operational ownership where needed?
 6. **Knowledge gate:** Have changed facts, decisions, specifications, and operational lessons returned to durable artifacts?

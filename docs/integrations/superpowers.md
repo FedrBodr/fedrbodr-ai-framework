@@ -35,7 +35,7 @@ A project could independently install Superpowers for a supported agent and map 
 - Upstream workflows, supported agents, file locations, and behavior may change.
 - Superpowers may apply stronger or different workflow rules than a project's risk model; conflicts require explicit human resolution.
 - Installation and updates create a separate third-party dependency relationship.
-- A future evaluation should test specification handoff, human approval boundaries, evidence preservation, and knowledge updates across at least two providers.
+- A future evaluation should test specification handoff, decision owner boundaries, evidence preservation, and knowledge updates across at least two providers.
 
 ## Attribution sources
 

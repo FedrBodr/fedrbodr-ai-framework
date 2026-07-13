@@ -20,7 +20,7 @@ Knowledge layer фиксирует то, что знает проект: про�
 
 ### Layer 2 — Process
 
-Process layer определяет движение работы и решений через discovery, requirements, specification, engineering review, анализ безопасности и нагрузки, planning, human approval, TDD, implementation, review, verification, release, documentation и knowledge capture. Безопасность пересекает все эти действия, а не является одной поздней стадией.
+Process layer определяет движение работы и решений через discovery, requirements, specification, engineering review, анализ безопасности и нагрузки, planning, decision owner approval, TDD, implementation, review, verification, release, documentation и knowledge capture. Безопасность пересекает все эти действия, а не является одной поздней стадией.
 
 ### Layer 3 — Skills
 

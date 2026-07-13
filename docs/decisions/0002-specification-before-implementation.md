@@ -10,7 +10,7 @@ AI can generate code before requirements, assumptions, security needs, load expe
 
 ## Decision
 
-No meaningful implementation begins before a sufficient written specification exists and receives the human approval required by its risk classification.
+No meaningful implementation begins before a sufficient written specification exists and receives the decision owner approval required by its risk classification.
 
 Specification depth is proportional to impact, uncertainty, reversibility, exposure, data sensitivity, and operational cost. Low Risk work may use a compact design note that combines problem, scope, assumptions, affected dimensions, acceptance criteria, and approval. Medium and High Risk work require progressively deeper review and explicit decision records.
 

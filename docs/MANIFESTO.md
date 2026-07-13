@@ -22,7 +22,7 @@ Models, vendors, interfaces, and costs change. Requirements, constraints, accept
 
 **No implementation before sufficient specification.** The specification may be brief for low-risk work, but intent, constraints, assumptions, acceptance criteria, and approval must be explicit enough to prevent hidden design by generation.
 
-**Review before generation.** Engineering review challenges the proposed design, security posture, load assumptions, operability, and acceptance strategy while change is still inexpensive. Required human approval follows that review.
+**Review before generation.** Engineering review challenges design, security, load, operability, and acceptance while change is inexpensive. Required decision owner approval follows.
 
 **Security begins with design.** Data classification, trust boundaries, abuse cases, authentication, authorization, secrets, and impact influence requirements and architecture before implementation.
 

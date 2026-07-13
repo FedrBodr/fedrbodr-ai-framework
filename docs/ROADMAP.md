@@ -23,7 +23,7 @@ Git-tracked durable knowledge remains authoritative throughout this lifecycle. R
 ## Phase 2 — Reference Workflows
 
 - Discovery and requirements.
-- Specification, engineering review, and human approval.
+- Specification, engineering review, and decision owner approval.
 - Planning and TDD implementation.
 - Specification compliance, code quality, and security review.
 - Verification, release, documentation update, and model handoff.

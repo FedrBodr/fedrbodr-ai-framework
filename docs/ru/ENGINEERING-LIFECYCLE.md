@@ -4,133 +4,79 @@
 
 > **Статус перевода:** актуален. Каноническим является [английский оригинал](../ENGINEERING-LIFECYCLE.md).
 
-Компактный lifecycle: **Обдумать → Специфицировать → Проверить → Спланировать → Реализовать → Верифицировать → Сохранить знания → Улучшить**. Расширенный lifecycle ниже делает обязанности и gates явными. Стадии могут образовывать итерации, а не проходиться один раз по прямой.
+Компактный цикл: **Обдумать → Специфицировать → Проверить → Спланировать → Реализовать → Верифицировать → Сохранить знания → Улучшить**.
 
-Полная концептуальная последовательность:
+Полная последовательность: **Бизнес-проблема → Discovery → Требования → Спецификация → Архитектура → Инженерное review → Утверждение владельцем решения → План реализации → TDD-реализация → Проверка соответствия спецификации → Review качества и безопасности → Верификация → Релиз → Обновление документации → Сохранение знаний → Улучшение**.
 
-**Business Problem → Discovery → Requirements → Specification → Architecture → Engineering Review → Human Approval → Implementation Plan → TDD Implementation → Specification Compliance Review → Code Quality and Security Review → Verification → Release → Documentation Update → Knowledge Capture → Improvement**
-
-Практические стадии ниже объединяют Business Problem с Problem Framing, развивают архитектуру внутри Specification и Engineering Review, выполняют compliance и quality/security проверки в Review, а Documentation Update относят к Knowledge Capture. Это сохраняет ясные обязанности без дублирования gates.
+Практические стадии ниже объединяют связанные шаги, не убирая их смысл. Работа может возвращаться назад.
 
 ## 1. Постановка проблемы
 
-- **Цель:** определить бизнес- или пользовательскую проблему и её важность.
-- **Входы:** наблюдения, запросы, инциденты, стратегия и существующий контекст.
-- **Выходы:** problem statement, owner, желаемый результат, начальный scope и признаки риска.
-- **Обязанности AI:** обобщить evidence, показать неоднозначность и задать точные вопросы, не придумывая intent.
-- **Обязанности человека:** владеть intent, priority, constraints и решением продолжать работу.
-- **Exit criteria:** проблема, owner, результат и важные unknowns сформулированы явно.
+- **Цель / входы / выходы:** превратить наблюдения, запросы, инциденты и стратегию в problem statement с владельцем, желаемым результатом, scope и признаками риска.
+- **AI / человек / выход:** AI показывает неоднозначность, не придумывая intent. Человек владеет priority и constraints. Стадия завершена, когда проблема, владелец, результат и важные unknowns явны.
 
 ## 2. Discovery
 
-- **Цель:** собрать evidence о пользователях, домене, текущей системе, альтернативах и ограничениях.
-- **Входы:** сформулированная проблема, репозитории, research, знания stakeholders и operational evidence.
-- **Выходы:** findings, ссылки на источники, assumptions, risks и unresolved questions.
-- **Обязанности AI:** исследовать, сравнить варианты, проверить факты репозитория и отделить evidence от inference.
-- **Обязанности человека:** предоставить доступ и domain context, проверить findings и разрешить конфликты priorities.
-- **Exit criteria:** evidence достаточно для требований или решения не продолжать.
+- **Цель / входы / выходы:** использовать репозитории, research, знания stakeholders и operational evidence для findings со ссылками, assumptions, risks и open questions.
+- **AI / человек / выход:** AI отделяет evidence от inference. Люди дают domain context и проверяют findings. Стадия завершена, когда evidence достаточно для требований или решения остановиться.
 
 ## 3. Требования
 
-- **Цель:** превратить проблему в проверяемые результаты и ограничения.
-- **Входы:** discovery findings, policies, user needs и business priorities.
-- **Выходы:** функциональные и нефункциональные требования, acceptance measures, exclusions и traceability.
-- **Обязанности AI:** написать точный draft, найти противоречия и недостающие engineering dimensions.
-- **Обязанности человека:** одобрить business meaning, data sensitivity, compliance и priority.
-- **Exit criteria:** требования проверяемы, ограничены scope и имеют owner; неизвестные видимы.
+- **Цель / входы / выходы:** превратить проверенные findings и policies в scoped, traceable функциональные и нефункциональные требования с acceptance measures.
+- **AI / человек / выход:** AI пишет draft и ищет противоречия; люди утверждают business meaning, data sensitivity, compliance и priority. Стадия завершена, когда требования тестируемы, имеют владельцев и показывают unknowns.
 
 ## 4. Спецификация
 
-- **Цель:** описать предлагаемое решение достаточно для оценки до реализации.
-- **Входы:** approved requirements, architecture, constraints, decisions и applicable dimensions.
-- **Выходы:** draft specification с design, boundaries, security, load, reliability, cost, acceptance criteria, test strategy, rollout и open questions.
-- **Обязанности AI:** описать варианты и trade-offs, сделать assumptions явными и не выдумывать load или security facts.
-- **Обязанности человека:** предоставить существенные assumptions и оценить соответствие дизайна intent.
-- **Exit criteria:** specification достаточна для risk-proportional engineering review.
+- **Цель / входы / выходы:** превратить approved requirements, architecture, constraints и decisions в design с boundaries, security, load, reliability, cost, acceptance, tests, rollout и open questions.
+- **AI / человек / выход:** AI показывает варианты и явные assumptions; люди дают существенные факты и оценивают соответствие задаче. Стадия завершена, когда specification готова к risk-proportional review.
 
 ## 5. Инженерное review
 
-- **Цель:** проверить feasibility, safety, operability, maintainability и полноту specification.
-- **Входы:** draft specification, architecture, applicable dimensions и evidence.
-- **Выходы:** review findings, required changes, residual risks и recommendation.
-- **Обязанности AI:** выполнить предварительное structured review, проверить traceability и найти conflicts и missing evidence.
-- **Обязанности человека:** применить domain expertise, запросить specialist review и не пропустить unsupported assumptions.
-- **Exit criteria:** blocking findings устранены или назначены; residual risk понятен.
+- **Цель / входы / выходы:** проверить feasibility, security, operability, maintainability и полноту; получить findings, required changes и residual risks.
+- **AI / человек / выход:** AI проводит structured preliminary review; люди применяют domain expertise и привлекают специалистов. Стадия завершена, когда blockers устранены или назначены, а residual risk понятен.
 
-## 6. Человеческое одобрение
+## 6. Утверждение владельцем решения
 
-- **Цель:** установить ответственное разрешение реализации и принятой неопределённости.
-- **Входы:** reviewed specification, findings, trade-offs, estimates и residual risks.
-- **Выходы:** Approved, Rejected или Revision Requested с approver и rationale.
-- **Обязанности AI:** кратко представить decision record и не выводить approval из молчания.
-- **Обязанности человека:** одобрить business intent, существенную architecture, security level, cost и risk acceptance.
-- **Exit criteria:** required approvers явно разрешили конкретную revision specification.
+- **Цель / входы / выходы:** превратить reviewed specification, trade-offs, estimates и residual risks в явное approval, rejection или revision request для конкретной версии.
+- **AI / человек / выход:** AI кратко представляет решение и не выводит approval из молчания. Владелец решения принимает intent, существенную architecture, security level, cost и risk. Стадия завершена после зафиксированного утверждения нужными владельцами.
 
 ## 7. План реализации
 
-- **Цель:** превратить approved specification в упорядоченные, тестируемые и reviewable шаги.
-- **Входы:** approved specification, repository state, architecture и delivery constraints.
-- **Выходы:** tasks со ссылками на requirements, ожидаемые files, tests, verification, dependencies и completion evidence.
-- **Обязанности AI:** предложить небольшие шаги, показать unknowns и сохранить alignment с approved design.
-- **Обязанности человека:** подтвердить sequencing, ownership, operational constraints и plan-level trade-offs.
-- **Exit criteria:** каждый task даёт независимо reviewable result и verification evidence.
+- **Цель / входы / выходы:** превратить approved specification в упорядоченные задачи со ссылками на requirements, files, tests, dependencies, verification и completion evidence.
+- **AI / человек / выход:** AI предлагает небольшие reviewable steps; люди подтверждают sequence, ownership и operational constraints. Стадия завершена, когда каждая задача даёт независимо проверяемый результат.
 
 ## 8. TDD-реализация
 
-- **Цель:** реализовать поведение короткими test-driven feedback loops там, где оно тестируемо.
-- **Входы:** approved specification и plan, current code и test infrastructure.
-- **Выходы:** tests, minimal implementation, refactoring и task-level evidence.
-- **Обязанности AI:** следовать red–green–refactor, соблюдать scope, показывать blockers и не ослаблять tests ради успеха.
-- **Обязанности человека:** разрешать ambiguous intent, проверять consequential choices и вмешиваться при design change.
-- **Exit criteria:** запланированное поведение реализовано, relevant tests проходят, deviations возвращены в specification review.
+- **Цель / входы / выходы:** по approved plan и циклу red–green–refactor создать tests, minimal implementation, refactoring и task evidence.
+- **AI / человек / выход:** AI соблюдает scope и не ослабляет tests; люди разрешают неоднозначность и существенные design changes. Стадия завершена, когда planned behavior проходит relevant tests, а deviations возвращены в specification review.
 
-Для documentation-only, exploratory и другой non-behavioral работы используется ближайший feedback loop со свидетельствами, а не бессмысленные тесты.
+Для документации, exploration и другой non-behavioral работы используйте ближайший feedback loop со свидетельствами, а не бессмысленные тесты.
 
 ## 9. Review
 
-- **Цель:** независимо оценить specification compliance, code quality, security и maintainability.
-- **Входы:** approved specification, plan, diff, tests и implementation notes.
-- **Выходы:** findings по impact, resolved issues и residual concerns.
-- **Обязанности AI:** провести preliminary specification и quality reviews с конкретным evidence.
-- **Обязанности человека:** проверить существенное поведение и risk, разрешить findings и отклонить unsupported completion claims.
-- **Exit criteria:** blocking findings устранены; remaining risks явны и имеют owners.
+- **Цель / входы / выходы:** сначала проверить specification compliance, затем code quality, security и maintainability; получить findings по impact и residual concerns.
+- **AI / человек / выход:** AI приводит конкретное evidence; люди разрешают существенные findings и unsupported completion claims. Стадия завершена, когда blockers устранены, а remaining risks имеют владельцев.
 
 ## 10. Верификация
 
-- **Цель:** показать, что acceptance criteria и relevant quality properties выполняются в целевом окружении.
-- **Входы:** reviewed implementation, acceptance criteria, test strategy, deployment assumptions и raw evidence.
-- **Выходы:** test results, acceptance checks, security и operational evidence, failures и conclusion.
-- **Обязанности AI:** выполнить свежие checks, сохранить relevant raw output и сообщить failures без преуменьшения.
-- **Обязанности человека:** оценить достаточность evidence, особенно для High Risk и нетестируемого автоматически поведения.
-- **Exit criteria:** evidence разрешает или блокирует release; unresolved risks перечислены.
+- **Цель / входы / выходы:** проверить acceptance criteria и нужные quality properties в целевом окружении; получить test, security, operational и failure evidence.
+- **AI / человек / выход:** AI выполняет свежие checks и сохраняет relevant raw output; люди оценивают достаточность evidence. Стадия завершена, когда evidence явно разрешает или блокирует release, а unresolved risks перечислены.
 
 ## 11. Релиз
 
-- **Цель:** доставить проверенное изменение с контролируемым operational risk.
-- **Входы:** release approval, artifacts, rollout и rollback plan, observability и operational ownership.
-- **Выходы:** released change, deployment record, observed health или documented rollback.
-- **Обязанности AI:** подготовить release material, выполнять только разрешённые шаги и отслеживать заданные signals при наличии tools.
-- **Обязанности человека:** разрешить High Risk production release, владеть incident decisions и принять operational consequences.
-- **Exit criteria:** release state известен, health checks завершены, rollback доступен согласно specification.
+- **Цель / входы / выходы:** доставить verified change с approved artifacts, rollout, rollback, observability и operational ownership; зафиксировать release state и health.
+- **AI / человек / выход:** AI выполняет только разрешённые шаги; люди разрешают High Risk production releases и владеют incidents. Стадия завершена, когда state и health известны, а rollback доступен согласно specification.
 
 ## 12. Сохранение знаний
 
-- **Цель:** вернуть проверенный опыт и изменившиеся факты в durable project knowledge.
-- **Входы:** specification, decisions, implementation, reviews, verification, release observations и incidents.
-- **Выходы:** updated context, architecture, ADRs, runbooks, roadmap, specifications и deprecation notes.
-- **Обязанности AI:** предложить focused updates, удалить stale claims и сохранить ссылки на evidence.
-- **Обязанности человека:** одобрить consequential knowledge и не допустить sensitive information в Git.
-- **Exit criteria:** maintained artifacts соответствуют verified system state, важный опыт доступен для поиска.
+- **Цель / входы / выходы:** превратить specifications, decisions, reviews, verification, release observations и incidents в обновлённые context, architecture, ADRs, runbooks и plans.
+- **AI / человек / выход:** AI предлагает focused updates и удаляет stale claims; люди утверждают consequential knowledge и защищают sensitive data. Стадия завершена, когда maintained artifacts соответствуют verified reality.
 
 ## 13. Улучшение
 
-- **Цель:** улучшать product, workflow, skills и governance по наблюдаемым результатам.
-- **Входы:** outcomes, defects, cycle time, context usage, cost, incidents и contributor feedback.
-- **Выходы:** prioritized improvements, experiments, changed practices или explicit no-change decisions.
-- **Обязанности AI:** анализировать patterns и предлагать bounded experiments, не превращая их в standards.
-- **Обязанности человека:** выбирать changes, оценивать trade-offs и одобрять evolution governance или architecture.
-- **Exit criteria:** learning имеет owner и disposition; accepted methodology changes записаны явно.
+- **Цель / входы / выходы:** использовать outcomes, defects, cycle time, cost, incidents и feedback для улучшений, experiments или explicit no-change decisions с владельцами.
+- **AI / человек / выход:** AI ищет patterns, не превращая experiments в standards; люди выбирают changes и утверждают evolution governance. Стадия завершена, когда каждый lesson имеет owner и disposition.
 
 ## Соразмерное применение
 
-Low Risk работа может объединить framing, requirements, specification, review и approval в одной короткой design note, а затем использовать focused plan и verification record. Medium и High Risk разделяют стадии и добавляют глубину или specialist review. Артефакты могут сокращаться; intent — явные assumptions, approval, verification и knowledge capture — не исчезает.
+Low Risk работа может объединить framing, requirements, specification, review и approval в одной короткой design note. Medium и High Risk разделяют стадии и добавляют глубину или specialist review. Артефакты могут сокращаться; явные assumptions, approval, verification и knowledge capture остаются.

@@ -11,7 +11,7 @@ These rules govern AI agents changing FedrBodr AI Framework itself.
 ## Engineering gates
 
 - Classify work as Low, Medium, or High Risk using `docs/GOVERNANCE.md`.
-- Do not begin meaningful implementation before a sufficient written specification and required human approval exist. A compact design note is sufficient for a low-risk documentation change.
+- Do not begin meaningful implementation before a sufficient written specification and required decision owner approval exist. A compact design note is sufficient for a low-risk documentation change.
 - Review applicable engineering dimensions before approving a design. Security and expected load are design inputs, not late checklists.
 - Treat generated output as untrusted until acceptance criteria and relevant checks provide fresh evidence.
 - Preserve raw failures, security findings, meaningful warnings, and other evidence when optimizing context.

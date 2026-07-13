@@ -43,9 +43,9 @@ Do not begin meaningful implementation until a written specification is sufficie
 
 Review applicable dimensions before approval: Security, Privacy, Performance, Reliability, Scalability, Observability, Maintainability, Testability, Operability, Cost, Compliance, Accessibility where applicable, and Context Efficiency. Security and expected load are architecture inputs, not final checklists.
 
-## Human approval gate
+## Decision owner approval gate
 
-An accountable human approves business intent, data sensitivity, required security level, major architecture, cost commitments, accepted risk, and consequential release. An agent may recommend a decision but must not infer approval from silence.
+The decision owner approves business intent, data sensitivity, security level, major architecture, cost commitments, accepted risk, and consequential release. An agent may recommend a decision but must not infer approval from silence.
 
 ## Implementation rules
 

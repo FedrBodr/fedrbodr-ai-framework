@@ -25,7 +25,7 @@ Git-tracked durable knowledge остаётся авторитетным на в�
 ## Phase 2 — Reference Workflows
 
 - Discovery и requirements.
-- Specification, engineering review и human approval.
+- Specification, engineering review и decision owner approval.
 - Planning и TDD implementation.
 - Specification compliance, code quality и security review.
 - Verification, release, documentation update и передача между моделями.

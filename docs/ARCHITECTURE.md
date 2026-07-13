@@ -18,7 +18,7 @@ The Knowledge layer records what the project knows: product and business context
 
 ### Layer 2 — Process
 
-The Process layer defines how work and decisions move through discovery, requirements, specification, engineering review, security and load analysis, planning, human approval, TDD, implementation, review, verification, release, documentation, and knowledge capture. Security is cross-cutting across these activities, not a single late stage.
+The Process layer moves work through discovery, requirements, specification, engineering review, security and load analysis, planning, decision owner approval, TDD, implementation, review, verification, release, documentation, and knowledge capture. Security is cross-cutting, not a late stage.
 
 ### Layer 3 — Skills
 

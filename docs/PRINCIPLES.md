@@ -13,7 +13,7 @@ These principles refine the [Manifesto](MANIFESTO.md). Each states a meaning, ra
 
 ## 2. Specification Before Implementation
 
-- **Meaning:** Meaningful implementation follows a sufficient written specification and the required human approval.
+- **Meaning:** Meaningful implementation follows a sufficient written specification and required decision owner approval.
 - **Rationale:** A specification makes assumptions, boundaries, and acceptance criteria reviewable before code makes them expensive.
 - **Practical implications:** Use a short design note for Low Risk work and deeper specifications for higher risk.
 - **Common failure mode:** Generated code becomes the first place where requirements and architecture are decided.
